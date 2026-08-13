@@ -101,7 +101,7 @@
 
 ## 七、版权声明
 
-软件界面底部中央固定显示：**【网安周报agent软件】版权所有：洪声越Jeff 联系邮箱：[HongshengyueJeff@163.com](mailto:HongshengyueJeff@163.com)**，导出的 Word 页脚亦附同样声明。
+软件界面底部中央固定显示：**【直触深网】版权所有：洪声越Jeff 联系邮箱：[HongshengyueJeff@163.com](mailto:HongshengyueJeff@163.com)**，导出的 Word 页脚亦附同样声明。
 
 ---
 
@@ -138,3 +138,9 @@ Copy-Item dist/CyberSecBackend/* resources/backend/ -Recurse -Force
 npm install
 npm run dist        # 输出至 electron/dist-electron/
 ```
+
+## 十、更新日志
+
+### v1.0.0(2026-08-13)
+
+软件第一版发布。
