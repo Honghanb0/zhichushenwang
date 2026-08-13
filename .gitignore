@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Electron
+electron/node_modules/
+electron/dist/
+electron/dist-electron/
+electron/out/
+electron/__pycache__/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.log
+
+# 临时 / 调试文件
+err_src.log
+thread_test_*.mark
+
+# 下载的 exe 等二进制产物（非源码）
+*.exe
+*.dll
+*.zip

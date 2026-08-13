@@ -1,0 +1,53 @@
+{
+  "name": "zhichushenwang",
+  "version": "1.0.0",
+  "description": "直触深网 - 网络安全周报生成器（Electron 桌面应用）",
+  "main": "main.js",
+  "author": "洪声越Jeff <HongshengyueJeff@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.zhichushenwang.app",
+    "productName": "直触深网",
+    "copyright": "Copyright © 2026 洪声越Jeff",
+    "icon": "build/icon.ico",
+    "files": [
+      "main.js",
+      "preload.js",
+      "package.json",
+      "app.py",
+      "cybersecurity_weekly_agent.py"
+    ],
+    "extraResources": [
+      { "from": "resources", "to": "resources" }
+    ],
+    "directories": {
+      "output": "dist-electron",
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "artifactName": "直触深网-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "直触深网-Portable-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "直触深网"
+    }
+  }
+}
